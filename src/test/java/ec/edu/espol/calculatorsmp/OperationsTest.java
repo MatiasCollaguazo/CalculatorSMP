@@ -127,11 +127,12 @@ public class OperationsTest {
     @Test
     public void testSolve5() {
         System.out.println("TS5");
-        String formula = "8/2";
-        String expResult = "8/2=4";
-        String result = Operations.Solve(formula);
+        String formula = "2+2/0";
+        ArithmeticException expResult = new ArithmeticException();
         // Prueba con una operación simple
-        assertEquals(expResult, result, "Error al resolver "+formula);
+        assertThrows(expResult.getClass(), () -> {
+            Operations.Solve(formula);
+        });
     }
     
     
@@ -150,7 +151,7 @@ public class OperationsTest {
     public void testSolve7() {
         System.out.println("TS7");
         String formula = "99*99*99*99";
-        String expResult = "99*99*99*99=9605960";
+        String expResult = "99*99*99*99=96059601";
         String result = Operations.Solve(formula);
         // Prueba con una operación simple
         assertEquals(expResult, result, "Error al resolver "+formula);
@@ -170,10 +171,8 @@ public class OperationsTest {
     public void testSolve9() {
         System.out.println("TS9");
         String formula = "";
-        String expResult = "NONE";
-        String result = Operations.Solve(formula);
-        // Prueba con una fórmula vacía (espera un fallo)
-        assertThrows(Exception.class, () -> {
+        EmptyStackException expResult = new EmptyStackException();
+        assertThrows(expResult.getClass(), () -> {
             Operations.Solve(formula);
         });
     }
@@ -182,11 +181,10 @@ public class OperationsTest {
     public void testSolve10() {
         System.out.println("TS10");
         String formula = "8/0";
-        String expResult = "NONE";
-        String result = Operations.Solve(formula);
+        ArithmeticException expResult = new ArithmeticException();
         // Prueba de división por cero (espera un fallo)
-        assertThrows(ArithmeticException.class, () -> {
-            Operations.Solve(formula);
+        assertThrows(expResult.getClass(), () -> {
+            String result = Operations.Solve(formula);
         });
     }
     
@@ -202,13 +200,28 @@ public class OperationsTest {
     
     @Test
     public void testSolve12() {
-        System.out.println("TS12");
-        String generatedFormula = Operations.MakeFormula();
-        String expResult = "NON VIABLE";
-        String result = Operations.Solve(generatedFormula);
-        System.out.println(result.matches(generatedFormula + "=\\d+"));
-        assertEquals(result.matches(generatedFormula + "=\\d+"), result, "Error al resolver fórmula generada: " + generatedFormula);
+        System.out.println("TS13");
+        String formula = "4+4*4";
+        String expResult = "4+4*4=20";
+        String result = Operations.Solve(formula);
+        // Prueba con una operación simple
+        assertEquals(expResult, result, "Error al resolver "+formula);
     }
+    
+    @Test
+    public void testSolve13() {
+        System.out.println("TS13");
+        String generatedFormula = Operations.MakeFormula();
+        String result = Operations.Solve(generatedFormula);
+        System.out.println("Generated Formula: " + generatedFormula);
+        System.out.println("Result: " + result);
 
+        // Extrae la parte de la fórmula antes del `=` y la parte numérica después del `=`
+        String[] parts = result.split("=");
+
+        // Verifica que el resultado coincide con la fórmula generada y que la parte después del `=` es un número
+        assertTrue(parts.length == 2 && parts[0].equals(generatedFormula) && parts[1].matches("\\d+"),
+            "Error al resolver fórmula generada: " + generatedFormula);
+    }
     
 }

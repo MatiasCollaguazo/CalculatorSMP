@@ -13,6 +13,16 @@ public class Operations {
 
     private static String[] op = { "+", "-", "*", "/" };// Operation set
 
+    /*
+        Limites:
+            1) Número de operaciones: La fórmula puede tener de 1 a 3 operaciones.
+            2) Número de números: La fórmula puede contener de 2 a 4 números.
+            3) Rango de cada número: Cada número a operar estará entre 1 y 99.
+               Dada la forma en que se maneja la librería Math nunca podra aparecer una división '/'
+            4) Operaciones posibles: +, -, *.
+        Como consecuencia de 1) no se podrá tener las 4 operaciones en una misma fórmula.
+        Y por ultimo como consecuencia de 2) no se podrá dividir para cero
+    */
     public static String MakeFormula(){
         System.out.println("git modify");
         StringBuilder build = new StringBuilder();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ec.edu.espol.calculatorsmp.OperationsTest" time="0.134" tests="14" errors="0" skipped="0" failures="7">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ec.edu.espol.calculatorsmp.OperationsTest" time="0.129" tests="14" errors="0" skipped="0" failures="7">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="EC"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-20.0.2.9-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\matia\AppData\Local\Temp\surefire2191315225891899892\surefirebooter-20240821174727543_3.jar C:\Users\matia\AppData\Local\Temp\surefire2191315225891899892 2024-08-21T17-47-27_334-jvmRun1 surefire-20240821174727543_1tmp surefire_0-20240821174727543_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\matia\AppData\Local\Temp\surefire11000980847675768221\surefirebooter-20240821182036150_3.jar C:\Users\matia\AppData\Local\Temp\surefire11000980847675768221 2024-08-21T18-20-35_948-jvmRun1 surefire-20240821182036150_1tmp surefire_0-20240821182036150_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="ec.edu.espol.calculatorsmp.OperationsTest"/>
     <property name="surefire.test.class.path" value="C:\Users\matia\OneDrive\Documentos\NetBeansProjects\CalculatorSMP\target\test-classes;C:\Users\matia\OneDrive\Documentos\NetBeansProjects\CalculatorSMP\target\classes;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\matia\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\matia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\matia\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\matia\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\matia\AppData\Local\Temp\surefire2191315225891899892\surefirebooter-20240821174727543_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\matia\AppData\Local\Temp\surefire11000980847675768221\surefirebooter-20240821182036150_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9"/>
@@ -61,12 +61,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testMakeFormula" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.033">
+  <testcase name="testMakeFormula" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.031">
     <system-out><![CDATA[MakeFormula
 git modify
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve1" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.013">
+  <testcase name="testSolve1" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.012">
     <failure message="Error al resolver 5+3 ==&gt; expected: &lt;5+3=8&gt; but was: &lt;5+3=3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Error al resolver 5+3 ==> expected: <5+3=8> but was: <5+3=3>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -142,7 +142,7 @@ git modify
     <system-out><![CDATA[TS1
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve2" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
+  <testcase name="testSolve2" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.003">
     <system-out><![CDATA[TS2
 ]]></system-out>
   </testcase>
@@ -222,7 +222,7 @@ git modify
     <system-out><![CDATA[TS3
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve4" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
+  <testcase name="testSolve4" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
     <failure message="Error al resolver 8/2 ==&gt; expected: &lt;8/2=4&gt; but was: &lt;8/2=0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Error al resolver 8/2 ==> expected: <8/2=4> but was: <8/2=0>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -302,7 +302,7 @@ git modify
     <system-out><![CDATA[TS5
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve6" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
+  <testcase name="testSolve6" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
     <failure message="Error al resolver 2+3*4 ==&gt; expected: &lt;2+3*4=14&gt; but was: &lt;2+3*4=0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Error al resolver 2+3*4 ==> expected: <2+3*4=14> but was: <2+3*4=0>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -378,11 +378,11 @@ git modify
     <system-out><![CDATA[TS6
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve7" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
+  <testcase name="testSolve7" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
     <system-out><![CDATA[TS7
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve8" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
+  <testcase name="testSolve8" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.003">
     <failure message="Error al resolver 6*3-2 ==&gt; expected: &lt;6*3-2=16&gt; but was: &lt;6*3-2=-2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Error al resolver 6*3-2 ==> expected: <6*3-2=16> but was: <6*3-2=-2>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -458,15 +458,15 @@ git modify
     <system-out><![CDATA[TS8
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve9" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
+  <testcase name="testSolve9" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
     <system-out><![CDATA[TS9
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve10" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
+  <testcase name="testSolve10" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
     <system-out><![CDATA[TS10
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve11" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
+  <testcase name="testSolve11" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
     <failure message="Error al resolver 2+2 ==&gt; expected: &lt;2+2=4&gt; but was: &lt;2+2=2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Error al resolver 2+2 ==> expected: <2+2=4> but was: <2+2=2>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -618,11 +618,11 @@ git modify
     <system-out><![CDATA[TS13
 ]]></system-out>
   </testcase>
-  <testcase name="testSolve13" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.002">
+  <testcase name="testSolve13" classname="ec.edu.espol.calculatorsmp.OperationsTest" time="0.001">
     <system-out><![CDATA[TS13
 git modify
-Generated Formula: 15*49*37
-Result: 15*49*37=27195
+Generated Formula: 34-45+44
+Result: 34-45+44=33
 ]]></system-out>
   </testcase>
 </testsuite>

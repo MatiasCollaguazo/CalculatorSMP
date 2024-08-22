@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ec.edu.espol.calculatorsmp.OperationsTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.134 s <<< FAILURE! -- in ec.edu.espol.calculatorsmp.OperationsTest
-ec.edu.espol.calculatorsmp.OperationsTest.testSolve1 -- Time elapsed: 0.013 s <<< FAILURE!
+Tests run: 14, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.129 s <<< FAILURE! -- in ec.edu.espol.calculatorsmp.OperationsTest
+ec.edu.espol.calculatorsmp.OperationsTest.testSolve1 -- Time elapsed: 0.012 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Error al resolver 5+3 ==> expected: <5+3=8> but was: <5+3=3>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -148,7 +148,7 @@ org.opentest4j.AssertionFailedError: Error al resolver 4*7 ==> expected: <4*7=28
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-ec.edu.espol.calculatorsmp.OperationsTest.testSolve4 -- Time elapsed: 0.002 s <<< FAILURE!
+ec.edu.espol.calculatorsmp.OperationsTest.testSolve4 -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Error al resolver 8/2 ==> expected: <8/2=4> but was: <8/2=0>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -221,7 +221,7 @@ org.opentest4j.AssertionFailedError: Error al resolver 8/2 ==> expected: <8/2=4>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-ec.edu.espol.calculatorsmp.OperationsTest.testSolve6 -- Time elapsed: 0.001 s <<< FAILURE!
+ec.edu.espol.calculatorsmp.OperationsTest.testSolve6 -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Error al resolver 2+3*4 ==> expected: <2+3*4=14> but was: <2+3*4=0>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -294,7 +294,7 @@ org.opentest4j.AssertionFailedError: Error al resolver 2+3*4 ==> expected: <2+3*
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-ec.edu.espol.calculatorsmp.OperationsTest.testSolve8 -- Time elapsed: 0.001 s <<< FAILURE!
+ec.edu.espol.calculatorsmp.OperationsTest.testSolve8 -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Error al resolver 6*3-2 ==> expected: <6*3-2=16> but was: <6*3-2=-2>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -367,7 +367,7 @@ org.opentest4j.AssertionFailedError: Error al resolver 6*3-2 ==> expected: <6*3-
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-ec.edu.espol.calculatorsmp.OperationsTest.testSolve11 -- Time elapsed: 0.001 s <<< FAILURE!
+ec.edu.espol.calculatorsmp.OperationsTest.testSolve11 -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Error al resolver 2+2 ==> expected: <2+2=4> but was: <2+2=2>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)

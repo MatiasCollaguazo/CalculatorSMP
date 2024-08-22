@@ -223,5 +223,26 @@ public class OperationsTest {
         assertTrue(parts.length == 2 && parts[0].equals(generatedFormula) && parts[1].matches("\\d+"),
             "Error al resolver fórmula generada: " + generatedFormula);
     }
-    
+
+    @Test
+    public void testSolve14() {
+        System.out.println("TS14");
+        String formula = "3-7";
+        String expResult = "3-7=-4";
+        String result = Operations.Solve(formula);
+        // Prueba con una operación que da un resultado negativo
+        assertEquals(expResult, result, "Error al resolver "+formula);
+    }
+
+    @Test
+    public void testSolve15() {
+        System.out.println("TS15");
+        String formula = "10+5*2-3";
+        String expResult = "10+5*2-3=17";
+        String result = Operations.Solve(formula);
+        // Prueba con una operación que tiene múltiples operadores de diferentes tipos
+        assertEquals(expResult, result, "Error al resolver "+formula);
+}
+
+
 }
